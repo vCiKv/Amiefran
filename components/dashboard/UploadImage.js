@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import Axios from 'axios' 
-import firebase from '../../api/Firebase'
+import firebase from '../Firebase'
 //const cloudinary = require('cloudinary').v2
 
 const UploadImage =()=>{

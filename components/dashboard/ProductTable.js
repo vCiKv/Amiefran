@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import { UpdateProduct,deleteProduct } from './tableFunctions';
 import { PopUp,ConfirmationPopUp } from './PopUp';
-import Firebase from '../../api/Firebase'
+import Firebase from '../Firebase'
 import { getFirestore,collection, getDocs,onSnapshot  } from "firebase/firestore";
 
 

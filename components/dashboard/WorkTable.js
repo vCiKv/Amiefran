@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import { UpdateWork,deleteWork } from './tableFunctions';
-import Firebase from '../../api/Firebase'
+import Firebase from '../Firebase'
 import { getFirestore,collection, getDocs,onSnapshot  } from "firebase/firestore";
 import { PopUp,ConfirmationPopUp } from './PopUp';
 const WorkTable=()=>{

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { getFirestore, doc,collection,addDoc, deleteDoc,updateDoc} from "firebase/firestore"
-import Firebase from '../../api/Firebase'
+import Firebase from '../Firebase'
 
 const db = getFirestore(Firebase)
 const InputField =(props)=>{

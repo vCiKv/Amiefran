@@ -1,9 +1,9 @@
 import {useState,useMemo} from 'react';
 import Script from 'next/script'
-import WorkTable from './components/WorkTable'
-import ProductTable from './components/ProductTable'
-import {AddProduct, AddWork} from './components/tableFunctions'
-import UploadImage from './components/UploadImage'
+import WorkTable from '../../components/dashboard/WorkTable'
+import ProductTable from '../../components/dashboard/ProductTable'
+import {AddProduct, AddWork} from '../../components/dashboard/tableFunctions'
+//import UploadImage from '../../components/dashboard/UploadImage'
 
 //import Firebase from './Firebase'
 //add/delete/edit our works 

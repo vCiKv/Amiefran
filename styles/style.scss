@@ -4,11 +4,14 @@ body{
     background-color: $dark-grey;
     min-height: 100vw;
 }
-body::-webkit-scrollbar,.table-container::-webkit-scrollbar {
+body::-webkit-scrollbar,.table-container::-webkit-scrollbar,.catalog .content::-webkit-scrollbar {
     width: 5px;
 }   
-body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar {
+body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar,.catalog .content::-webkit-scrollbar-thumb {
     background:$gold; 
+}
+.catalog .content::-webkit-scrollbar-thumb{
+    background:$silver
 }
 .is-gold{
     color: $gold;
@@ -26,14 +29,6 @@ body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar {
         color:$gold
     }
 }
-
-
-
-
-
-
-
-
 
 
 @import './navbar.scss';

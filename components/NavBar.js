@@ -50,16 +50,16 @@ const NavBar = () =>{
         <div id="navbarAmiefran" className={mobileNavStyle ? 'navbar-menu is-active':'navbar-menu'}>
           <div onClick={()=>navBurger()} className="navbar-start">
             <Link href="/" className="navbar-item">
-              Home
+              <span className="navbar-item">Home</span>
             </Link>
             <Link href="/#about" className="navbar-item">
-              About
+              <span className="navbar-item">About</span>
             </Link>
             <Link href="/#services" className="navbar-item">
-              Services
+              <span className="navbar-item">Services</span>
             </Link>
             <Link href="/#works" className="navbar-item">
-              Works
+              <span className="navbar-item">Works</span>
             </Link>
           </div>
           <div className="navbar-end">

@@ -1,9 +1,9 @@
 import Script from 'next/script'
-import NavBar from './components/NavBar'
-import AmiHero from './components/AmiHero'
-import AmiServices from './components/AmiServices'
-import AmiAboutUs from './components/AmiAboutUs'
-import AmiWorks from './components/AmiWorks'
+import NavBar from '../components/NavBar'
+import AmiHero from '../components/AmiHero'
+import AmiServices from '../components/AmiServices'
+import AmiAboutUs from '../components/AmiAboutUs'
+import AmiWorks from '../components/AmiWorks'
 export default function App() {
   const HomePage=()=>{
     return(

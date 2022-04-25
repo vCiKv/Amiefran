@@ -20,7 +20,6 @@ export default function Catalog(){
             code:'L94',
             image:'https://images.unsplash.com/photo-1622131815452-cc00d8d89f02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW50JTIwZGVzZ2lufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
             description:'readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. ',
-
         }
     ]
     // const discountedPrice=(price,discount)=>{
@@ -40,7 +39,7 @@ export default function Catalog(){
         overflowX:'auto'
     }
     return (
-        <div className="">
+        <div className="catalog">
             <div className="columns is-multiline">
                 {data.map(item=>(
                     <div key={item.code} className="column is-one-third-tablet">
