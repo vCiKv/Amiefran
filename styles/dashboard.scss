@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.ami-menu{ 
+    display: none;   
+    width:100vw;
+    position: fixed;
+    top:0;
+    height:100vh;
+    background-color: $gold;
+    z-index: 1;
+    padding: 35px;
+    .menu-list:hover{
+        color:white;
+    }
+}
+.menu-container{
+    min-height: 100vh;
+    &::before{
+        content:'';
+        width: 100vw;
+        height: 50px;
+        display: block;
+        background-color: inherit;
+    }
+}
+.menu-burger{
+    z-index: 20;
+    position: fixed;
+    padding: 5px;
+    top:0;
+}
+.table-container{
+    .icon:hover{
+        cursor: pointer;
+        color:$gold;
+    }
+}
+
+
+@media (min-width: 1023px){
+    .ami-menu{
+        width:15vw;
+        display: block;
+    }
+    .menu-burger{
+        display: none;
+    }
+    .menu-container{
+        margin-left: 15vw;
+    }    
+}

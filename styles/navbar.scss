@@ -1,0 +1,30 @@
+.navbar{ 
+    .nav-phone-border{
+        border:2px solid  $lighter-grey;
+        color: $lighter-grey;
+        padding: 7px;
+        letter-spacing: 3px;
+        align-items: center;
+        border-radius: 6px;   
+        text-align: center; 
+        @media (min-width: 1023px){
+            &{
+                margin-right: 2vw;
+            }
+        }
+    }
+    
+    &:hover{
+        border:2px solid  $lighter-grey;
+        background-color: $lighter-grey;
+        color: $gold;
+        cursor: pointer;
+        
+    }
+    &.is-custom-color{
+        background-color:rgba(55, 55, 55,0) ;
+        position: absolute;
+        width: 100vw;
+    }
+}
+

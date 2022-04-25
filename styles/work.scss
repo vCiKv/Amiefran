@@ -1,0 +1,48 @@
+@import './variables.scss';
+.work.card{
+    &:hover{
+        .card-content.amiefran-works{
+            display: block;
+        }
+    }
+    .card-header-title{
+        color:white;
+    }
+    @media (min-width: 1023px){
+        .card-content.amiefran-works{
+            display: none;
+            position: absolute;
+            top:0;
+            background-color:#00000085;
+            width: 100%;
+            height: 100%;
+            color:white;
+        }
+        .button.is-gold{
+            color:$gold !important;
+        }
+
+    }
+    .card-content.amiefran-works{
+        color:white;
+    } 
+    .button.is-gold{
+        color:$lighter-grey;;
+        border:1px solid transparent;
+        background: transparent;
+        border-radius: 6px;
+        &:hover{
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+.modal .subtitle{
+    color:$lighter-grey;
+}
+.modal-content::-webkit-scrollbar {
+    width: 5px;
+}   
+.modal-content::-webkit-scrollbar-thumb {
+    background:$gold; 
+}

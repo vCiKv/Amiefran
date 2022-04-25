@@ -1,0 +1,46 @@
+@import './variables.scss';
+body{
+    margin: 0;
+    background-color: $dark-grey;
+    min-height: 100vw;
+}
+body::-webkit-scrollbar,.table-container::-webkit-scrollbar {
+    width: 5px;
+}   
+body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar {
+    background:$gold; 
+}
+.is-gold{
+    color: $gold;
+}
+.notification{
+    strong{
+        color:white !important;
+    }
+}
+.services {
+    .box{
+        height:220px;
+    }
+    .box:hover{
+        color:$gold
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@import './navbar.scss';
+@import './hero.scss';
+@import './shapes.scss';
+@import './about.scss';
+@import './work.scss';
+@import './dashboard.scss';
+@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma/sass/components/menu.sass";

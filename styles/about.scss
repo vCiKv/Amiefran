@@ -1,0 +1,29 @@
+@import './variables.scss';
+.about-us{
+    padding-bottom: 20vh;
+
+    .image-space{
+        display: block;
+        width:100vw;
+        height: calc(100vh - 58px);
+    }
+    .about-image{
+        position: static;
+        background-image: url('https://res.cloudinary.com/amiefran/image/upload/v1619279161/amiefran/deconovo-2Xa_7vuFvOk-unsplash_dqafk9.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        object-fit: contain;
+        height: 100%; 
+        width: 100vw;
+    }
+    
+    .title.amiefran{
+        background-color: $silver;
+        padding: 8px 0;
+        position:relative;
+        bottom:70px;
+        // -webkit-text-fill-color: transparent;
+        // background-clip: text;
+
+    }
+}

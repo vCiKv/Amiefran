@@ -1,0 +1,47 @@
+@import './variables.scss';
+.hero{
+    .hero-left{
+        z-index: 1;
+        background-color:$dark-grey ;
+        width: 100%;
+        min-height: 100vh;
+        .has-text-left {
+            padding: 0 0 10% 15%;
+            z-index: 1;
+        }
+        &::before{
+            content: '';
+            display: block;
+            height: 300px;
+            width: 170px;
+            background-color:$lighter-grey;
+            position: absolute;
+            left:60px;
+            border-radius: 6px;
+            border: 1px solid transparent;
+        }
+    }
+    p,h1{
+        color:$gold !important;
+    }
+    .hero-right{
+        background-color: $silver ;
+        width: 100vw;
+        img{            
+            position: relative !important;
+            left:-20% !important;
+            padding: 100px 0 100px 0 !important;
+            height:auto !important;
+            max-height: none !important;
+        }
+        span{
+            overflow: inherit !important;
+        }
+    }
+}
+
+
+
+
+
+
