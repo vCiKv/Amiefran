@@ -39,7 +39,8 @@ export default function Catalog(){
         overflowX:'auto'
     }
     return (
-        <div className="catalog">
+        <div className="catalog container">
+            <h1 className="is-size-1 is-gold mb-5" style={{textAlign:'center'}}>Our Catalog</h1>
             <div className="columns is-multiline">
                 {data.map(item=>(
                     <div key={item.code} className="column is-one-third-tablet">
