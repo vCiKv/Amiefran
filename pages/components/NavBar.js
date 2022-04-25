@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import Link from 'next/link'
 const NavBar = () =>{
     const [showMessages,setShowMessages] = useState(false)
     const [mobileNavStyle,setMobileNavStyle] = useState(false) 
@@ -25,8 +26,8 @@ const NavBar = () =>{
         textTransform:"capitalize"
       }
       return(
-        <div style={styles} class="notification">
-          <button onClick={()=>{setShowMessages(false)}}class="delete"></button>
+        <div style={styles} className="notification">
+          <button onClick={()=>{setShowMessages(false)}}className="delete"></button>
             <strong>copied to clipboard</strong>
         </div>  
       )
@@ -34,12 +35,12 @@ const NavBar = () =>{
     return(
       <nav className="navbar is-fixed-top">
         <div className="navbar-brand">
-          <a className="navbar-item" href="#">
+          <Link className="navbar-item" href="#">
             <img 
               alt=""           
               src={("./imgs/logo_transparent.png")} 
             />
-          </a>
+          </Link>
           <a role="button" className={mobileNavStyle ? 'navbar-burger is-active':'navbar-burger'} aria-label="menu" aria-expanded="false" data-target="navbarAmiefran" onClick={()=>{navBurger()}}>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -48,18 +49,18 @@ const NavBar = () =>{
         </div>
         <div id="navbarAmiefran" className={mobileNavStyle ? 'navbar-menu is-active':'navbar-menu'}>
           <div onClick={()=>navBurger()} className="navbar-start">
-            <a href="/" className="navbar-item">
+            <Link href="/" className="navbar-item">
               Home
-            </a>
-            <a href="#about" className="navbar-item">
+            </Link>
+            <Link href="/#about" className="navbar-item">
               About
-            </a>
-            <a href="#services" className="navbar-item">
+            </Link>
+            <Link href="/#services" className="navbar-item">
               Services
-            </a>
-            <a href="#works" className="navbar-item">
+            </Link>
+            <Link href="/#works" className="navbar-item">
               Works
-            </a>
+            </Link>
           </div>
           <div className="navbar-end">
             <div 
