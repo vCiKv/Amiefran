@@ -76,7 +76,7 @@ const Dashboard =(props)=>{
             setLoginData({...loginData,[e.target.name]:e.target.value})
         }
         return(
-            <form style={{maxWidth:'400px',margin:'0 auto'}}>
+            <form style={{maxWidth:'400px',height:'100vh',margin:'0 auto'}}>
                 <div className="card p-4">
                     <h1 className="is-size-1">Sign in</h1>
                     <input 
