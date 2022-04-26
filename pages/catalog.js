@@ -1,4 +1,21 @@
+
+import {useState,useEffect} from 'react' 
+import Firebase from '../components/Firebase'
+import { getFirestore,collection, getDocs } from "firebase/firestore"
 export default function Catalog(){
+    const [catalogData,setCatalogData] = useState([])
+    useEffect(()=>{
+        async function getCatalogData(){
+            const db = getFirestore(Firebase)
+            let tempData = []
+            const snapShot = await getDocs(collection(db,'catalog'))  
+            snapShot.docs.forEach(doc => {
+                tempData.push({id:doc.id, ...doc.data()})
+            });
+            setCatalogData(tempData)
+        }
+        getCatalogData(); 
+    },[])
     const data = [
         {
             title:'a place',
@@ -42,8 +59,8 @@ export default function Catalog(){
         <div className="catalog container">
             <h1 className="is-size-1 is-gold mb-5" style={{textAlign:'center'}}>Our Catalog</h1>
             <div className="columns is-multiline">
-                {data.map(item=>(
-                    <div key={item.code} className="column is-one-third-tablet">
+                {catalogData.map(item=>(
+                    <div key={item.id} className="column is-one-third-tablet">
                        <div className="card" >
                            <span style={tagStyle}>{item.code}</span>
                            <div className="card-image">
