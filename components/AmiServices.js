@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const AmiServices = () =>{
   const serviceStyle = {
     minHeight:"100vh",
@@ -29,14 +30,16 @@ const AmiServices = () =>{
         <div className="shape-rec"></div>
         <div className="shape-circle"></div>
         <div className="container">
-
           <div className ="has-text-centered is-capitalized mb-6">
             <h2 className="title is-1 ">Services</h2>
             <p className="subtitle is-3">We Offers all sorts of services which include</p>
           </div>
           <div className="columns is-multiline has-text-centered">
               {serviceCards}
-          </div>          
+          </div> 
+          <div className="my-2">
+              <Link href="/catalog" passHref><button style={{backgroundColor:'inherit'}}className="button is-outlined is-gold">Check Our Catalog</button></Link>
+          </div>         
         </div>
       </section>
     )

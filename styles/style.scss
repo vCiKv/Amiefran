@@ -14,7 +14,7 @@ body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar,.catalog .cont
     background:$silver
 }
 .is-gold{
-    color: $gold;
+    color: $gold !important;
 }
 .notification{
     strong{
