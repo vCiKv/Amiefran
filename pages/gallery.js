@@ -153,10 +153,10 @@ const imageData = [
     return(
         <div className="container">
             <h1 className="is-gold is-size-1 p-3">Our Gallery</h1>
-            <div className="columns is-multiline is-mobile p-3">
+            <div className="columns is-multiline p-3">
                 {imageData.map(img=>(
                     <div key={img.url} className="column is-half">
-                        <Image src={img.url} width={500} height={500} style={{objectFit:"cover"}}/>
+                        <Image src={img.url} width={500} height={500} />
                     </div>
                 ))}        
             </div>

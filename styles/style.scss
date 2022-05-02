@@ -37,11 +37,12 @@ body::-webkit-scrollbar-thumb,.table-container::-webkit-scrollbar,.catalog .cont
     .column {
         flex: 50%;
         padding: 0 4px;
-        img {
+        img, span >img {
             margin-top: 8px;
             vertical-align: middle;
+            object-fit:cover !important;
         }
-    }    
+    }   
 }
 
 

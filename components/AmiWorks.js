@@ -10,9 +10,6 @@ const AmiWorks=()=>{
     const [workData,setWorkData]=useState([])
     const [showWorkPopUp,setShowWorkPopUp]=useState(false)
     const [popupContent,setPopUpContent]=useState(false)
-
-    const [workPopUpData,setWorkPopUpData]=useState([])
-
     useEffect(()=>{
         async function getWorkData(){
           const db = getFirestore(Firebase)

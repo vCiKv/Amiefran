@@ -52,9 +52,9 @@ const WorkTable=()=>{
             link:{maxWidth:250,overflow:"hidden"},
             fullText:{whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth:250}
         }   
-        const TimeToDate=(c)=>{
-            return new Date(c*1000).toLocaleString()
-        }
+        // const TimeToDate=(c)=>{
+        //     return new Date(c*1000).toLocaleString()
+        // }
         const TableContainer = (props)=>{
             return(
             <div className="table-container">
